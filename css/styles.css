@@ -7,12 +7,49 @@
 
 }
 
+p, h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
 .list {
     list-style: none;
 }
 
 .link {
     text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    Width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin: 0 auto;
+    outline: 2px solid red;
 }
 
 /*============ Header=============*/
@@ -67,7 +104,15 @@
 /*===============Business==========*/
 
 .business {
-    background: var(--NAVY-BLUE, #2E2F42);
+
+    padding-bottom: 120px;
+
+
+}
+
+.business-container {
+        background: var(--NAVY-BLUE, #2E2F42);
+        padding: 188px 472px 292px 472px;
 }
 
 .business-title {
@@ -77,6 +122,9 @@
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin-bottom: 48px;
+    max-width: 496px;
+    max-height: 120px;
 }
 
 .business-service-btn {
@@ -88,12 +136,15 @@
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     background: var(--IRIS, #4D5AE5);
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
     
 }
 
 .business-service-btn:hover,
 .business-service-btn:focus {
-    color: #404BBF;
+    color: #FFFFFF;
     
     background-color: #404BBF
 }
@@ -102,6 +153,11 @@
 
 /*===========Individual=====*/
 
+.individual {
+    /*padding-top: 120px;*/
+    padding-bottom: 120px;
+}
+
 
 .individual-subtitle {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -109,6 +165,7 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .individual-item-text {
@@ -124,6 +181,8 @@
 
 .team {
     background: var(--CLOUD, #F4F4FD);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-logo {
@@ -134,6 +193,7 @@
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 .team-list {
@@ -142,6 +202,7 @@
 
 .team-img {
     background-color: #FFFFFF;
+    margin-bottom: 32px;
 }
 
 .team-item {
@@ -155,6 +216,7 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-item-profession {
@@ -163,6 +225,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
 }
 
 /*==========================*/
@@ -171,8 +234,9 @@
 
 
 .portfolio {
-    font-family: "Raleway", sans-serif;
     background: #FFF;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-logo {
@@ -183,6 +247,11 @@
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-img {
+    margin-bottom: 32px;
 }
 
 .portfolio-list-item {
@@ -191,6 +260,9 @@
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .portfolio-list-prog {
@@ -198,6 +270,10 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+
 }
 
 /*===========================*/
@@ -207,6 +283,9 @@
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 102px;
+    padding-bottom: 100px;
+    
 }
 
 .footer-logo {
@@ -216,7 +295,8 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    font-family: "Raleway", sans-serif
+    font-family: "Raleway", sans-serif;
+    margin-top: 101.5px;
 }
 
 .footer-logo span {
@@ -228,4 +308,7 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 17.5px;
+    max-width: 264px;
+    max-height: 72px;
 }
