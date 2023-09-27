@@ -48,11 +48,24 @@ img {
     Width: 1440px;
     padding-left: 156px;
     padding-right: 156px;
+    padding-top: 26px;
+    padding-bottom: 25px;
     margin: 0 auto;
-    outline: 2px solid red;
+    /*outline: 2px solid red;*/
 }
 
 /*============ Header=============*/
+
+.header-container {
+    display: flex;
+    gap: 332px;
+}
+
+.header-navigation {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+}
 
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -62,10 +75,16 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    gap: 76px;
 }
 
 .header-logo span {
     color: var(--NAVY-BLUE, #2E2F42);
+}
+
+.header-menu {
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link {
@@ -91,6 +110,9 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    gap: 40px;
+    margin-left: auto;
 }
 
 .address-soc:hover,
@@ -112,7 +134,9 @@ img {
 
 .business-container {
         background: var(--NAVY-BLUE, #2E2F42);
-        padding: 188px 472px 292px 472px;
+        padding-top: 188px;
+        padding-bottom: 188px;
+
 }
 
 .business-title {
@@ -122,9 +146,10 @@ img {
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    margin-bottom: 48px;
     max-width: 496px;
     max-height: 120px;
+    margin: 0 auto;
+    margin-bottom: 64px;
 }
 
 .business-service-btn {
@@ -135,10 +160,13 @@ img {
     letter-spacing: 0.04em;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
-    background: var(--IRIS, #4D5AE5);
     display: block;
     margin: 0 auto;
     border-radius: 4px;
+    background-color: var(--IRIS, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 16px 32px;
     
 }
 
@@ -154,8 +182,17 @@ img {
 /*===========Individual=====*/
 
 .individual {
-    /*padding-top: 120px;*/
     padding-bottom: 120px;
+}
+
+.individual-list {
+    display: flex;
+    gap: 24px;
+       
+}
+
+.individual-item {
+    width: calc((100% - 24px * 3) / 4);
 }
 
 
@@ -198,6 +235,8 @@ img {
 
 .team-list {
     background-color: #FFFFFF;
+    display: flex;
+    gap: 24px;
 }
 
 .team-img {
@@ -248,6 +287,17 @@ img {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+}
+
+.portfolio-item {
+    width: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-img {
