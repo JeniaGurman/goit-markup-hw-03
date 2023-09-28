@@ -253,11 +253,11 @@ img {
     gap: 24px;
 }
 
-.team-mark {
+.team-name-name {
     padding: 32px 0;
 }
 
-.team-tom {
+/*.team-tom {
     padding: 32px 0;
 }
 
@@ -267,7 +267,7 @@ img {
 
 .team-daniel {
     padding: 32px 0;
-}
+}*/
 
 .team-img {
     background-color: #FFFFFF;
@@ -326,11 +326,19 @@ img {
     display: flex;
     flex-wrap: wrap;
     row-gap: 48px;
+    column-gap: 24px;
 
 }
 
 .portfolio-item {
     width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-program {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+
 }
 
 .portfolio-img {
@@ -366,8 +374,7 @@ img {
 
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
-    padding-top: 102px;
-    padding-bottom: 100px;
+    padding: 100px 0;
     
 }
 
@@ -380,6 +387,8 @@ img {
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
     margin-top: 101.5px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo span {
