@@ -64,13 +64,13 @@ img {
 .header-container {
     display: flex;
     gap: 332px;
+    align-items: center;
 }
 
 .header-navigation {
     display: flex;
     flex-grow: 1;
     align-items: center;
-    justify-content: space-between;
 }
 
 .header-logo {
@@ -104,6 +104,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 24px 0;
+    display: block;
 }
 
 .header-menu-link:hover,
@@ -125,7 +126,6 @@ img {
     display: flex;
     gap: 40px;
     margin-left: auto;
-    padding: 24px 0;
 }
 
 .address-soc:hover,
@@ -141,16 +141,11 @@ img {
 .business {
 
     padding: 188px 0;
+    background: var(--NAVY-BLUE, #2E2F42);
 
 
 }
 
-.business-container {
-        background: var(--NAVY-BLUE, #2E2F42);
-        padding-top: 188px;
-        padding-bottom: 188px;
-
-}
 
 .business-title {
     color: var(--WHITE, #FFF);
@@ -248,7 +243,6 @@ img {
 }
 
 .team-list {
-    background-color: #FFFFFF;
     display: flex;
     gap: 24px;
 }
@@ -271,12 +265,13 @@ img {
 
 .team-img {
     background-color: #FFFFFF;
-    margin-bottom: 32px;
+        
 }
 
 .team-item {
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
+    width: calc((100% - 24px * 3) / 4);
 }
 
 .team-name {
@@ -296,7 +291,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
     text-align: center;
 }
 
@@ -342,7 +336,7 @@ img {
 }
 
 .portfolio-img {
-    margin-bottom: 32px;
+   
 }
 
 .portfolio-list-item {
@@ -352,8 +346,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    margin-left: 16px;
-    margin-right: 16px;
+    
 }
 
 .portfolio-list-prog {
@@ -361,10 +354,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-bottom: 32px;
-    margin-left: 16px;
-    margin-right: 16px;
-
+        
 }
 
 /*===========================*/
@@ -386,7 +376,6 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     font-family: "Raleway", sans-serif;
-    margin-top: 101.5px;
     display: inline-block;
     margin-bottom: 16px;
 }
@@ -400,7 +389,6 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 17.5px;
     max-width: 264px;
     max-height: 72px;
-}
+    }
